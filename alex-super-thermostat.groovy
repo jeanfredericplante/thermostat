@@ -14,7 +14,7 @@
  *
  *  Author: JF after SmartThings
  */
- 
+
 definition(
     name: "Alex Super Thermostat",
     namespace: "jeanfredericplante",
@@ -74,13 +74,13 @@ def updated()
 
 def temperatureHandler(evt)
 {
-    log.debug "temperature handler: $lastTemp"
+    log.debug "temperature change detected"
     checkTemp()
 }
 
 def motionHandler(evt)
 {
-        log.debug "motion handler: $lastTemp"
+        log.debug "motion detected"
         checkTemp()
 }
 
